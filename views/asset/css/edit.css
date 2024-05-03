@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../img/gym.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    width: 450px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px; 
+}
+
+.main h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.main .content {
+    margin-bottom: 20px; 
+}
+
+.content input[type="text"],
+.content select {
+    width: calc(100% - 50px); 
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2); 
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px; 
+}
+
+.content select {
+    appearance: none;
+    padding-right: 40px; 
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px; 
+}
+
+.content i {
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.content button {
+    width: 100%; 
+    height: 50px;
+    background-color: black; 
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px; 
+    transition: background-color 0.3s; 
+}
+
+.content button.cancel {
+    background-color: #f44336; 
+}
+
+.content button:hover {
+    background-color: #005f74; 
+}
+
+.content button.cancel:hover {
+    background-color: #f21306; 
+}

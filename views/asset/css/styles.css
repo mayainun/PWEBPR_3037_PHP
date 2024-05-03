@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main {
+  display: flex;
+}
+
+.sidebar {
+  background-color: black;
+  color: #fff;
+  width: 250px;
+  padding: 0px 20px;
+  height: 100vh;
+  text-align: center;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 1000; 
+}
+
+.sidebar-item {
+  margin-top: 5px;
+  padding: 20px 20px;
+  border-bottom: 2px solid white;
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar-item:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.sidebar-item > a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.content::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/gym.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.content {
+  position: relative; 
+  z-index: 0; 
+  margin-left: 290px; /* Ubah menjadi persentase */
+  overflow-x: auto; /* Tambahkan overflow-x */
+}
+
+/* CSS */
+.header {
+  padding: 1px 20px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  color: white; 
+}
+
+
+.data h2 {
+  color: white;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.data {
+  margin-left: 20px; 
+  padding: 20px; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  table-layout: fixed; 
+}
+
+th {
+  padding: 10px 15px; 
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+td {
+  padding: 10px 15px; 
+  border: 1px solid black;
+  padding: 10px;
+}
+
+td img {
+  max-width: 50px; 
+  border-radius: 50%;
+}
+
+.border-left {
+  border-left: 2px solid white;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  padding: 10px 50px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
+}
+
+.logout-btn:hover {
+  background-color: #993b34;
+}
+
+.btn-tambah {
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 18px;
+  background-color: #179c00;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-edit {
+  background-color: #ffcd38;
+  border: 1px solid #c4a54a;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-delete {
+  background-color: #ff6338;
+  border: 1px solid #92361d;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #c69b1b;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #c04c2c;
+  cursor: pointer;
+}
